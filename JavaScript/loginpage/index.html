@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="./index.css" rel="stylesheet">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+	<section id="background">
+		<div class="background-Right"></div>
+		<div class="background-Left"></div>
+	</section>
+
+	<main id="slide">
+		<article class="top">
+			<section class="left">
+				<div class="content">
+					<h2>Sign Up</h2>
+					<form method="post" onsubmit="return false;">
+						<div>
+							<input type="text" placeholder="email" /> 
+							<input type="password" placeholder="password" />
+						</div>
+					</form>
+					<button id="LeftToRight" class="on-off">Login</button>
+					<button>Register</button>
+				</div>
+			</section>
+
+			<section class="right">
+				<div class="content">
+					<h2>Login</h2>
+					<form method="post" onsubmit="return false;">
+						<div>
+							<input type="text" placeholder="email" /> 
+							<input type="password" placeholder="password" />
+						</div>
+						<button id="RightToLeft" class="on-off">Register</button>
+						<button>Login</button>
+					</form>
+				</div>
+			</section>
+		</article>
+	</main>
+</body>
+</html>

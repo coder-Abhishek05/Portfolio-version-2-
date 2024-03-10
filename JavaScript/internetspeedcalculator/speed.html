@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Speed Calculator</title>
+</head>
+<body>
+    <script>
+            
+            var userImageLink =  
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png"; 
+            var start, end; 
+            
+            // The size in bytes 
+            var _download_Size = 5616998; 
+            var _downloadImg_Src = new Image(); 
+  
+            _downloadImg_Src.onload = function () { 
+                end = new Date().getTime(); 
+                displaySpeed(); 
+            }; 
+            start = new Date().getTime(); 
+            _downloadImg_Src.src = userImageLink;
+            document.body.style.backgroundColor="Yellow"
+            document.body.style.fontSize = "larger"
+            document.write("time start: " + start); 
+            document.write("<br>"); 
+  
+            function displaySpeed() { 
+                var time_Duration = (end - start) / 1000; 
+                var loaded_Bits = _download_Size * 8; 
+                
+                /* Converts a number into string 
+                   using toFixed(2) rounding to 2 */
+                var b_p_s = (loaded_Bits / time_Duration).toFixed(2); 
+                var speed_In_Kbps = (b_p_s / 1024).toFixed(2); 
+                var speed_In_Mbps = (speed_In_Kbps / 1024).toFixed(2); 
+                alert("Your internet connection speed is: \n" 
+                      + b_p_s + " bps\n" + speed_In_Kbps  
+                      + " kbps\n" + speed_In_Mbps + " Mbps\n"); 
+            }
+    </script>
+</body>
+</html>

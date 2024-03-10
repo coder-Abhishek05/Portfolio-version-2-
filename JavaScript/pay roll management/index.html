@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay rol management</title>
+    <link href="./index.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="mainbox">
+        <h3 style="text-align: center;";>CASH REGISTER BOX</h3>
+        <p>Enter the bill amount and the cash given by the customer  
+            and know minimum number of notes to return 
+        </p>
+        <label for="customer-bill">Enter the bill amount</label>
+        <input type="number" id="customer-bill" name="customer-bill">
+        <label for="cash-given">Enter the cash given by customer</label>
+        <input type="number" id="cash-given" name="cash-given">
+        <button id="calbut"> Calculate </button>
+        <table class="table">
+            <caption> Return Denomination </caption>
+            <tr class="row"> 
+                <th class="row">No of Notes</th> 
+                <mark><td class="no-of-notes"></td></mark> 
+                <mark><td class="no-of-notes"></td></mark> 
+                <mark><td class="no-of-notes"></td></mark> 
+                <mark><td class="no-of-notes"></td></mark> 
+                <mark><td class="no-of-notes"></td></mark> 
+                <mark><td class="no-of-notes"></td></mark> 
+                <mark><td class="no-of-notes"></td></mark> 
+             </tr> 
+             <tr> 
+                <th class="row">Notes</th> 
+                <td class="row">2000</td> 
+                <td class="row">500</td> 
+                <td class="row">100</td> 
+                <td class="row">20</td> 
+                <td class="row">10</td> 
+                <td class="row">5</td> 
+                <td class="row">1</td> 
+             </tr> 
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

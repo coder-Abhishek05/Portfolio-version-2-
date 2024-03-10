@@ -1,0 +1,44 @@
+.mainbox{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    gap: 10px;
+    padding: 20px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    background:url(./pngtree-stack-of-coins-on-pink-background-with-money-saving-concept-3d-image_460102.jpg);
+    background-size: cover;
+    font-weight: bolder;
+    
+}
+body{
+    background: url(./istockphoto-1368169112-612x612.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+    color: red;
+}
+.table{
+    border: 1.5px solid black;
+
+}
+.row{
+    border: 1.5px solid black;
+    color: black;
+    font-weight:bolder;
+    text-decoration:underline;
+}
+button{
+    width: fit-content;
+    position: relative;
+    left: 40%;
+}
+.no-of-notes{
+    border: 1.5 solid black;
+}
+mark{
+    background-color: blue;
+    color: white;
+}

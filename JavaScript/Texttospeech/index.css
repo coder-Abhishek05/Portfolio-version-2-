@@ -1,0 +1,39 @@
+
+
+body{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.container{
+    position: absolute;
+    left: 35%;
+    right: 20%;
+}
+.inner-container > h1{
+    position: relative;
+    left:28%;
+    right: 20%;
+    color: white;
+    font-weight: bolder;
+}
+button{
+    background-image: linear-gradient(to right, #ff512f, #f09819);
+    position: absolute;
+    left: 10%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: larger;
+
+}
+.text-control{
+    font-size:x-large;
+    background-color: rgba(10, 10, 10,0.8);
+    color: bisque;
+    height: 50vh;
+    width: 25vw;
+}
+p{
+    font-size: x-large;
+    color:darkgray;
+}

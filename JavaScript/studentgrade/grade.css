@@ -1,0 +1,29 @@
+body{
+    background-color: aquamarine;
+}
+#main_box{
+    border: 3px solid black;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    border-radius: 10px;
+    display: flex; 
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem;
+    gap: 2px;
+    width: 20%;
+    background-color: rgb(200,200,200);
+
+}
+
+label{
+    font-size: large;
+    font-weight: bold;
+}
+button{
+    margin-top: 2rem;
+    width: fit-content;
+    background-color: none;
+}
